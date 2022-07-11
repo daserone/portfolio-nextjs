@@ -59,8 +59,8 @@ const Main = () => {
           </div>
         </div>
         <ScrollIntoView selector="#about">
-          <div class="mx-auto p-20">
-            <FaChevronDown class="animate-bounce mx-auto text-3xl text-blue-500" />
+          <div className="mx-auto p-20">
+            <FaChevronDown className="animate-bounce mx-auto text-3xl text-blue-500" />
           </div>
         </ScrollIntoView>
       </div>
