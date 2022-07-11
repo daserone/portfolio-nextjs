@@ -18,10 +18,10 @@ const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
         <div data-aos="fade-down" data-aos-duration="800">
           <p className="uppercase text-sm tracking-widest ">
-            LET&#39;S BUILD SOMETHING TOGETHER
+            LET'S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-4">
-            Hi, I&#39;m <span className="text-[#5651e5]"> Daniel Ramirez</span>
+            Hi, I'm <span className="text-[#5651e5]"> Daniel Ramirez</span>
           </h1>
           <h1 className="py-2">A Front-End Web & Mobile Developer</h1>
           <p className="py-4  sm:max-w-[70%] m-auto">
