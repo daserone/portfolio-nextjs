@@ -10,7 +10,7 @@ export function getServerSideProps(context) {
   };
 }
 
-function project({ params }) {
+function Project({ params }) {
   const test = INITIAL_PROJECTS.filter((s) => s.id == params.project);
   const [project, setProject] = useState(test[0]);
   console.log(project);
@@ -46,7 +46,7 @@ function project({ params }) {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               {project.techs.map((tech) => (
-                <p className=" py-2 flex items-center">
+                <p key={tech} className=" py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" /> {tech}
                 </p>
               ))}
@@ -61,4 +61,4 @@ function project({ params }) {
   );
 }
 
-export default project;
+export default Project;
