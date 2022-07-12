@@ -7,7 +7,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
 // import { useRouter } from 'next/router';
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
-const Navbar = () => {
+const Navbar = ({ navColor }) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
@@ -30,7 +30,7 @@ const Navbar = () => {
       return (
         <HiOutlineMoon
           size={18}
-          color="black"
+          color={navColor ? "white" : "black"}
           onClick={() => setTheme("dark")}
         ></HiOutlineMoon>
       );
@@ -64,25 +64,67 @@ const Navbar = () => {
         <div></div>
         <div>
           <ul className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li
+              className={
+                !navColor
+                  ? "ml-10 text-sm uppercase hover:border-b"
+                  : "ml-10 text-sm uppercase hover:border-b text-white"
+              }
+            >
               <Link href="/">Home</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li
+              className={
+                !navColor
+                  ? "ml-10 text-sm uppercase hover:border-b"
+                  : "ml-10 text-sm uppercase hover:border-b text-white"
+              }
+            >
               <Link href="/#about">About</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li
+              className={
+                !navColor
+                  ? "ml-10 text-sm uppercase hover:border-b"
+                  : "ml-10 text-sm uppercase hover:border-b text-white"
+              }
+            >
               <Link href="/#skills">Skills</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li
+              className={
+                !navColor
+                  ? "ml-10 text-sm uppercase hover:border-b"
+                  : "ml-10 text-sm uppercase hover:border-b text-white"
+              }
+            >
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li
+              className={
+                !navColor
+                  ? "ml-10 text-sm uppercase hover:border-b"
+                  : "ml-10 text-sm uppercase hover:border-b text-white"
+              }
+            >
               <Link href="/resume">Resume</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li
+              className={
+                !navColor
+                  ? "ml-10 text-sm uppercase hover:border-b"
+                  : "ml-10 text-sm uppercase hover:border-b text-white"
+              }
+            >
               <Link href="/#contact">Contact</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li
+              className={
+                !navColor
+                  ? "ml-10 text-sm uppercase hover:border-b"
+                  : "ml-10 text-sm uppercase hover:border-b text-white"
+              }
+            >
               {renderThemeChanges()}
             </li>
           </ul>

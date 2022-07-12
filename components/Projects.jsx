@@ -1,13 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import Nadbio from "../public/assets/nadbio.jpg";
-import Dowinners from "../public/assets/dowinners.jpg";
-import Sieni from "../public/assets/sieni.jpg";
-import Portfolio from "../public/assets/portfolio.png";
+import React, { useState } from "react";
+
 import ProjectItem from "./ProjectItem";
+import { INITIAL_PROJECTS } from "../utils/projects";
 
 const Projects = () => {
+  const [projects, setProjects] = useState(INITIAL_PROJECTS);
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
@@ -16,30 +13,17 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
-            title="SIENI"
-            backgroundImg={Sieni}
-            projectUrl="/sieni"
-            tech="Angular"
-          />
-          <ProjectItem
-            title="Dowinners"
-            backgroundImg={Dowinners}
-            projectUrl="/dowinners"
-            tech="Flutter"
-          />
-          <ProjectItem
-            title="NADBIO Store"
-            backgroundImg={Nadbio}
-            projectUrl="/nadbio"
-            tech="Flutter"
-          />
-          <ProjectItem
-            title="Portfolio"
-            backgroundImg={Portfolio}
-            projectUrl="/portfolio"
-            tech="Next JS"
-          />
+          {projects.map((project) => (
+            <ProjectItem
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              backgroundImg={project.image}
+              projectUrl={project.url}
+              techs={project.techs}
+              id={project.id}
+            />
+          ))}
         </div>
       </div>
     </div>
