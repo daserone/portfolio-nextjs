@@ -5,29 +5,43 @@ import AboutImg from "../public/assets/about.jpg";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div
+      id="about"
+      className="w-full md:h-screen p-2 flex items-center py-16 bg-white dark:bg-[#1f1f1f]"
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <h2 className="uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </h2>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 ">I am not your average developer</p>
           <p className="py-2 ">
-            I have spent the last 12 years in the fire service working as a
-            professional firefighter/paramedic. I have always had a knack for
-            technology and working with computers. In 2019 I started working
-            with HTML and CSS to make some minor edits on a small business
-            website that I was operating. What I thought was just a few small
-            edits turned into a love for programming.
+            Front-End & Mobile developer with 3+ years of experience building
+            and maintaining responsive websites and hybrid apps. Proficient with
+            HTML,CSS,Javascrip,Typescript,Angular,React,Flutter; I also have
+            working knowledge of Adobe Illustrator,Photoshop and Xd.
+          </p>
+          <p className="py-2 ">
+            In 2019 I started working with HTML and CSS to make a small business
+            website for a family member. What I thought was just a few small
+            work turned into a love for programming.
           </p>
           <p className="py-2 ">
             Fascinated with how intricate programming can be I was quickly drawn
             to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I then started
-            freelancing for e-commerce companies on the Shopify platform. I am
-            now spending my time building projects with React JS, Firebase, and
-            learning new technologies.
+            enthused with making websites interactive. I am now spending my time
+            building projects with React JS, Flutter,Angular and learning new
+            technologies in my free time.
+          </p>
+          <p className="py-2">
+            I consider myself a super curious person, committed, responsible,
+            proactive and always willing to learn something new, in addition, I
+            have the ability to be a person who adapts and learns from any
+            subject in a very short time.
+          </p>
+          <p className="py-2">
+            I am always ready for new challenges, if you need help or want me to
+            be part of your team, do not hesitate to write to me!
           </p>
           <Link href="/#projects">
             <p className="py-2  underline cursor-pointer">
