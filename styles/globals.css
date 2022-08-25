@@ -36,4 +36,10 @@ html {
   button {
     @apply shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
+  .profile {
+    height: 100px !important;
+    width: 100px !important;
+    min-width: 100px !important;
+    min-height: 100px !important;
+  }
 }

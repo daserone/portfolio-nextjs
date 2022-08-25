@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import ContactImg from "../public/assets/about.jpg";
+import ContactImg from "../public/assets/1.png";
 
 const Contact = () => {
   const [query, setQuery] = useState({
@@ -47,14 +47,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl p-4">
-            <div className="lg:p-4 h-full ">
-              <div>
-                <Image
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src={ContactImg}
-                  alt="/"
-                />
-              </div>
+            <div className="lg:p-4  h-full flex flex-col justify-center">
               <div>
                 <h2 className="py-2">Daniel Ramirez</h2>
                 <p>Front-End & Mobile Developer</p>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import AboutImg from "../public/assets/about.jpg";
+import AboutImg from "../public/assets/1.png";
 
 const About = () => {
   return (
@@ -23,8 +23,8 @@ const About = () => {
           </p>
           <p className="py-2 ">
             In 2019 I started working with HTML and CSS to make a small business
-            website for a family member. What I thought was just a few small
-            work turned into a love for programming.
+            website for a family member. What I thought was just a small work
+            turned into a love for programming.
           </p>
           <p className="py-2 ">
             Fascinated with how intricate programming can be I was quickly drawn
@@ -50,7 +50,7 @@ const About = () => {
           </Link>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image src={AboutImg} className="rounded-xl" alt="/" />
+          <Image src={AboutImg} className=" rounded-3xl" alt="/" />
         </div>
       </div>
     </div>

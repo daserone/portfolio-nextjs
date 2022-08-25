@@ -56,7 +56,7 @@ const Navbar = ({ navColor }) => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl shadow-black-500/50 dark:shadow-grey-500/50  z-[100] ease-in-out duration-300"
+          ? "fixed w-full h-20 shadow-xl shadow-black-500/50 dark:shadow-grey-500/50  bg-[#5651e5] z-[100] ease-in-out duration-300"
           : "fixed w-full h-20 z-[100]"
       }
     >

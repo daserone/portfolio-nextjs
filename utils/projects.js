@@ -1,7 +1,9 @@
-import Nadbio from "../public/assets/nadbio.jpg";
+import Nadbio from "../public/assets/3.png";
 import Dowinners from "../public/assets/dowinners.jpg";
 import Sieni from "../public/assets/sieni.jpg";
 import Portfolio from "../public/assets/portfolio.png";
+import Streetgym from "../public/assets/streetgym.png";
+
 export const INITIAL_PROJECTS = [
   {
     title: "SIENI",
@@ -32,10 +34,20 @@ export const INITIAL_PROJECTS = [
   },
   {
     title: "Portfolio",
-    description: "description",
-    techs: ["React", "Next.js", "Javascript", "Taillwind.css"],
+    description:
+      "Responsive Web Portfolio for myself, made it with React and Tailwind CSS",
+    techs: ["React", "Next.js", "Javascript", "Taillwind CSS", "HTML & CSS"],
     image: Portfolio,
     url: "",
     id: 4,
+  },
+  {
+    title: "Streetgym Program",
+    description:
+      "Hybryd Web and Mobile(IOs,Android) Application, made with Angular and Ionic framework. This application was made for a personal trainer to share his workouts and diet plans with his clients",
+    techs: ["Angular", "Typescript", "Bootstrap", "HTML & CSS", "Ionic"],
+    image: Streetgym,
+    url: "https://general.streetgymprogram.com",
+    id: 5,
   },
 ];
