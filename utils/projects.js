@@ -3,6 +3,7 @@ import Dowinners from "../public/assets/dowinners.jpg";
 import Sieni from "../public/assets/sieni.jpg";
 import Portfolio from "../public/assets/portfolio.png";
 import Streetgym from "../public/assets/streetgym.png";
+import Mitim from "../public/assets/mitim.jpg";
 
 export const INITIAL_PROJECTS = [
   {
@@ -49,5 +50,14 @@ export const INITIAL_PROJECTS = [
     image: Streetgym,
     url: "https://general.streetgymprogram.com",
     id: 5,
+  },
+  {
+    title: "MITIM",
+    description:
+      "Mobile app made with flutter and dart. For this application i made the integration of Firebase and  Google API'S like Google maps and Google Calendar, also i created a chat screen with communication between firebase users.",
+    techs: ["Flutter", "Dart", "Firebase", "Google Maps", "Google Calendar"],
+    image: Mitim,
+    url: "",
+    id: 6,
   },
 ];
