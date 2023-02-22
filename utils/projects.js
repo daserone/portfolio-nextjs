@@ -4,6 +4,8 @@ import Sieni from "../public/assets/sieni.jpg";
 import Portfolio from "../public/assets/portfolio.png";
 import Streetgym from "../public/assets/streetgym.png";
 import Mitim from "../public/assets/mitim.jpg";
+import Puppify from "../public/assets/puppify.png";
+import Bieni from "../public/assets/bieni.png";
 
 export const INITIAL_PROJECTS = [
   {
@@ -59,5 +61,23 @@ export const INITIAL_PROJECTS = [
     image: Mitim,
     url: "",
     id: 6,
+  },
+  {
+    title: "BIENI",
+    description:
+      "Mobile app made with Ionic and Reactjs. For this application i made the integration of Firebase for authentication,This app allows patients to schedule consultations with various doctors and clinics.",
+    techs: ["Ionic", "Reactjs", "Firebase"],
+    image: Bieni,
+    url: "",
+    id: 7,
+  },
+  {
+    title: "Puppify",
+    description:
+      "Mobile app made with flutter and dart. For this application i made the integration of Firebase and  Google API'S like Google maps, also i created a chat screen with communication between firebase users.",
+    techs: ["Flutter", "Dart", "Firebase", "Google Maps"],
+    image: Mitim,
+    url: "",
+    id: 8,
   },
 ];
