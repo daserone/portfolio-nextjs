@@ -76,7 +76,7 @@ export const INITIAL_PROJECTS = [
     description:
       "Mobile app made with flutter and dart. For this application i made the integration of Firebase and  Google API'S like Google maps, also i created a chat screen with communication between firebase users.",
     techs: ["Flutter", "Dart", "Firebase", "Google Maps"],
-    image: Mitim,
+    image: Puppify,
     url: "",
     id: 8,
   },
